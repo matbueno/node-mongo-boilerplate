@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "browser": false
+  },
+  "plugins": ["import"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "info", "error"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "parser": "babel-eslint"
+}
